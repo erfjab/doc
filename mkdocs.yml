@@ -1,0 +1,82 @@
+site_name: ErfJab Docs
+site_url: https://erfjab.github.io/doc
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: red
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: deep orange
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Fira Code
+  features:
+    - search.highlight
+    - search.suggest
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/erfjab
+      name: ErfJab on GitHub
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/erfjabs
+      name: ErfJab on Telegram    
+    - icon: fontawesome/solid/envelope
+      link: mailto:erfjab@gmail.com
+      name: Email ErfJab
+
+copyright: Copyright &copy; 2024 ErfJab
+
+nav:
+  - Home: index.md
+  - Backuper:
+      - About: Backuper/index.md
+      - Install: Backuper/install.md
+      - Manage: Backuper/manage.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed
+  - pymdownx.tilde
+
+plugins:
+  - search
+  - offline
